@@ -1,111 +1,206 @@
-# Zomato Food Delivery Time Prediction
+# 🍔 Zomato Food Delivery Time Prediction
 
-A machine learning project that analyzes food delivery data and predicts the estimated delivery time for an order.
+A machine learning project that analyzes food delivery data, identifies factors affecting delivery time, and predicts the estimated delivery time for new orders.
+
+The project includes data cleaning, exploratory data analysis, feature engineering, regression modeling, an interactive Streamlit prediction application, and a Power BI dashboard.
+
+---
 
 ## 📌 Project Overview
 
-Food delivery time can be affected by several factors such as traffic conditions, weather, distance, restaurant preparation time, and delivery-person characteristics.
+Food delivery time can be influenced by several factors, including:
 
-The goal of this project is to analyze these factors, identify important patterns in the data, build regression models for delivery-time prediction, and deploy the final prediction model through an interactive Streamlit application.
+* Traffic conditions
+* Weather
+* Delivery distance
+* Restaurant preparation time
+* Delivery-person characteristics
+* Vehicle condition
+* Multiple deliveries
+* Order timing
+* Festival days
+* City type
+
+The goal of this project is to analyze these factors, build machine learning models that predict delivery time, and deploy the final prediction model through an interactive web application.
+
+---
 
 ## 🎯 Business Question
 
 **What factors influence food delivery time, and can machine learning be used to predict the delivery time of a given order?**
 
+---
+
 ## 📊 Dataset
 
-The project uses a Zomato food delivery dataset containing approximately 45,500 orders.
+The project uses a Zomato food delivery dataset containing approximately **45,500 orders**.
 
-The dataset includes information related to:
+The dataset contains information related to:
 
 * Delivery person
 * Restaurant
 * Order and delivery times
 * Weather conditions
 * Traffic conditions
-* Vehicle type
+* Vehicle type and condition
 * Location coordinates
-* Restaurant and delivery distances
+* Multiple deliveries
+* Festival information
 * Delivery time
 
 ### Dataset Files
 
-* `Zomato Dataset.csv` — Original dataset
-* `Zomato_Cleaned_Dareen.csv` — Cleaned dataset used for analysis and modeling
+| File                             | Description                                    |
+| -------------------------------- | ---------------------------------------------- |
+| `data/Zomato Dataset.csv`        | Original dataset                               |
+| `data/Zomato_Cleaned_Dareen.csv` | Cleaned dataset used for analysis and modeling |
 
-## 🔄 Project Pipeline
+---
 
-The project follows the following workflow:
+## 🔄 Project Workflow
 
-1. **Data Collection**
-2. **Data Cleaning**
+The project follows an end-to-end data science and machine learning workflow:
 
-   * Missing-value handling
-   * Duplicate removal
-   * Outlier handling
-   * Date/time processing
-   * Geographic-coordinate validation
-3. **Exploratory Data Analysis**
+### 1. Data Collection
 
-   * Distribution analysis
-   * Correlation analysis
-   * Categorical analysis
-4. **Feature Engineering**
+The original food delivery dataset was collected and prepared for analysis.
 
-   * Distance-related features
-   * Time-based features
-   * Restaurant preparation time
-   * Other relevant predictive features
-5. **Machine Learning**
+### 2. Data Cleaning
 
-   * Linear Regression
-   * Decision Tree
-   * Random Forest
-6. **Model Evaluation**
-7. **Deployment**
+The data preparation process included:
 
-   * Interactive Streamlit prediction application
-8. **Dashboard**
+* Handling missing values
+* Removing duplicates
+* Handling outliers
+* Processing date and time information
+* Validating geographic information
+* Preparing categorical and numerical features
 
-   * Business and analytical insights using Power BI
+### 3. Exploratory Data Analysis
 
-## 🤖 Machine Learning
+The dataset was explored using:
 
-Several regression models were investigated and compared:
+* Distribution analysis
+* Correlation analysis
+* Categorical analysis
+* Numerical summaries
+* Visualization
 
-* Linear Regression — baseline model
+### 4. Feature Engineering
+
+Additional predictive features were created, including:
+
+* Delivery distance
+* Order hour
+* Day of week
+* Weekend indicator
+* Rush-hour indicator
+* Restaurant preparation time
+* Other order and delivery characteristics
+
+### 5. Machine Learning
+
+Three regression approaches were investigated:
+
+* Linear Regression
 * Decision Tree Regressor
 * Random Forest Regressor
 
+### 6. Model Evaluation
+
+The regression models were evaluated and compared using appropriate regression metrics.
+
+The trained Random Forest model was selected for the deployed prediction application.
+
+### 7. Deployment
+
+The trained model was integrated into an interactive **Streamlit** application that allows users to enter order conditions and receive an estimated delivery time.
+
+### 8. Dashboard
+
+A Power BI dashboard is included as part of the project to communicate analytical findings and business insights.
+
+---
+
+## 🤖 Machine Learning Model
+
+The project investigates several regression models:
+
+| Model                   | Role                        |
+| ----------------------- | --------------------------- |
+| Linear Regression       | Baseline model              |
+| Decision Tree Regressor | Non-linear regression model |
+| Random Forest Regressor | Final deployed model        |
+
 The trained Random Forest model is stored in:
 
-`rf_delivery_time_model.pkl`
+```text
+rf_delivery_time_model.pkl
+```
 
 The complete data preparation, analysis, feature engineering, and modeling workflow is available in:
 
-`notebooks/zomato_food_delivery.ipynb`
+```text
+notebooks/zomato_food_delivery.ipynb
+```
+
+---
 
 ## 🖥️ Streamlit Application
 
-The project includes an interactive Streamlit application that allows users to enter order-related information and receive a predicted delivery time.
+The project includes an interactive Streamlit application for delivery-time prediction.
 
-Application file:
+Users can provide information such as:
 
-`app.py`
+* Delivery-person age
+* Delivery-person rating
+* Vehicle condition
+* Order date and time
+* Multiple deliveries
+* Order type
+* Vehicle type
+* Preparation time
+* Delivery distance
+* Weather
+* Traffic
+* Festival status
+* City type
 
-The deployed application link will be added here:
+The application then uses the trained Random Forest model to estimate the delivery time.
 
-**Streamlit App:** *To be added*
+### 🚀 Live Application
 
-## 📈 Dashboard
+**[Open the Streamlit App](https://zomato-food-delivery-time-prediction-project-hu6scvwmeu88brhbc.streamlit.app/)**
 
-An interactive Power BI dashboard was developed to present the project's analytical findings and business insights.
+### Application Files
+
+```text
+app.py
+rf_delivery_time_model.pkl
+requirements.txt
+```
+
+---
+
+## 📈 Power BI Dashboard
+
+An interactive Power BI dashboard is part of the project and presents:
+
+* Delivery-time analysis
+* Business insights
+* Data distributions
+* Relevant relationships and patterns
+* Interactive visualizations
 
 The dashboard file will be added to:
 
-`dashboard/`
+```text
+dashboard/
+```
 
-**Dashboard / Published Link:** *To be added*
+**Dashboard:** To be added when the final dashboard file is received.
+
+---
 
 ## 📁 Project Structure
 
@@ -125,45 +220,92 @@ Zomato-Food-Delivery-Time-Prediction-project/
 │   └── zomato_food_delivery.ipynb
 │
 ├── dashboard/
-│   └── Power BI dashboard
+│   └── Final Power BI dashboard
 │
 ├── report/
-│   └── Project report
+│   └── Final project report
 │
 └── presentation/
-    └── Project presentation
+    └── Final project presentation
 ```
 
+---
+
 ## 🛠️ Technologies Used
+
+### Programming & Data Analysis
 
 * Python
 * Pandas
 * NumPy
+
+### Visualization
+
 * Matplotlib
 * Seaborn
+* Power BI
+
+### Machine Learning
+
 * Scikit-learn
+* Random Forest
+* Decision Tree
+* Linear Regression
+
+### Development & Deployment
+
 * Jupyter Notebook
 * Streamlit
-* Power BI
-* Git & GitHub
+* Git
+* GitHub
 
-## ▶️ Running the Streamlit Application
+---
 
-Clone the repository and install the required dependencies:
+## ▶️ Run the Project Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mennakhaled456/Zomato-Food-Delivery-Time-Prediction-project.git
+```
+
+### 2. Enter the project directory
+
+```bash
+cd Zomato-Food-Delivery-Time-Prediction-project
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Then run:
+### 4. Run the Streamlit application
 
 ```bash
 streamlit run app.py
 ```
 
+The application will then open in your browser.
+
+---
+
+## 📓 Notebook
+
+The complete machine learning workflow is available in:
+
+```text
+notebooks/zomato_food_delivery.ipynb
+```
+
+The notebook includes the project's data preparation, exploratory analysis, feature engineering, model training, and evaluation workflow.
+
+---
+
 ## 📚 Project Documentation
 
-The written project report will contain:
+The final written documentation will cover:
 
 * Business question
 * Dataset and data source
@@ -172,36 +314,79 @@ The written project report will contain:
 * Feature engineering
 * Machine learning methodology
 * Model evaluation
-* Dashboard findings
+* Key findings
+* Dashboard insights
 * Limitations
-* Conclusions
+* Conclusion
+* Project links
 
-The report will be added to:
+The final report will be added to:
 
-`report/`
+```text
+report/
+```
+
+---
 
 ## 👥 Team
 
-This project was completed by a 5-member team.
+This project was completed by a **5-member team**.
 
-Team member names and individual responsibilities will be added to this section.
+Team member names and individual responsibilities will be added to the final project documentation.
+
+---
 
 ## 🔗 Project Links
 
-* **GitHub Repository:** https://github.com/mennakhaled456/Zomato-Food-Delivery-Time-Prediction-project
-* **Streamlit Application:** To be added
-* **Dashboard:** To be added
+| Resource                   | Link                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------- |
+| GitHub Repository          | [GitHub](https://github.com/mennakhaled456/Zomato-Food-Delivery-Time-Prediction-project)          |
+| Live Streamlit Application | [Open App](https://zomato-food-delivery-time-prediction-project-hu6scvwmeu88brhbc.streamlit.app/) |
+| Power BI Dashboard         | To be added                                                                                       |
+| Project Report             | To be added                                                                                       |
+| Presentation               | To be added                                                                                       |
+
+---
 
 ## 📖 Data Source
 
-The original dataset source and access date will be documented here and in the final project report.
+The dataset source and access information will be documented in the final project report.
 
 **Dataset URL:** To be added
 
 **Access Date:** To be added
 
+---
+
 ## ⚠️ Limitations
 
-The model's predictions depend on the quality and characteristics of the available dataset. Factors that are not represented in the dataset may affect actual delivery times.
+Machine learning predictions depend on the quality and characteristics of the available training data.
 
-Further limitations and model-specific findings will be documented in the final project report.
+Actual delivery times may also be affected by factors that are not represented in the dataset, such as unexpected traffic events, operational issues, restaurant delays, weather changes, and other real-world conditions.
+
+---
+
+## 📄 Project Status
+
+| Component                 | Status        |
+| ------------------------- | ------------- |
+| Data Collection           | ✅ Complete    |
+| Data Cleaning             | ✅ Complete    |
+| Exploratory Data Analysis | ✅ Complete    |
+| Feature Engineering       | ✅ Complete    |
+| Machine Learning          | ✅ Complete    |
+| Model Deployment          | ✅ Complete    |
+| Streamlit Application     | ✅ Live        |
+| Power BI Dashboard        | ⏳ To be added |
+| Written Report            | ⏳ To be added |
+| Presentation              | ⏳ To be added |
+
+---
+
+## ⭐ Project Links
+
+**GitHub:**
+https://github.com/mennakhaled456/Zomato-Food-Delivery-Time-Prediction-project
+
+**Live Streamlit Application:**
+https://zomato-food-delivery-time-prediction-project-hu6scvwmeu88brhbc.streamlit.app/
