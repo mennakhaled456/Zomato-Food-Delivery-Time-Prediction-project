@@ -328,64 +328,75 @@ report/
 
 ---
 
-👥 Team
+## 👥 Team
 
 This project was completed by a 5-member team:
 
-Team Member	Responsibilities
-Menna Allah Khaled Rajab	Feature Engineering, Main Regression Model, Hyperparameter Tuning, Streamlit Application, Project Coordination & Final Integration
-Abdelrahman	Data Preprocessing, Exploratory Data Analysis (EDA), Baseline Linear Regression
-Dareen	Data Cleaning Lead, Handling Missing/Invalid Values and Outliers, Decision Tree Regression Model
-Salma	Power BI/Tableau Dashboard — Page 1 or Page 2
-Maureen	Power BI/Tableau Dashboard — Page 1 or Page 2
-Menna — Feature Engineering & Main Model
-Calculated actual delivery distance between restaurant and delivery location using latitude and longitude with the Haversine formula
-Extracted time-based features such as:
-Hour of the day
-Day of the week
-Peak/rush-hour indicator
-Built the main regression model for predicting Time_taken
-Performed model tuning to improve predictive performance
-Developed and deployed the interactive Streamlit prediction application
-Coordinated the integration of the project components and final submission files
-Abdelrahman — Preprocessing, EDA & Baseline Model
-Preprocessed numerical and date/time columns
-Handled missing values
-Converted date/time information into appropriate formats
-Investigated and handled unusual data values
-Performed Exploratory Data Analysis (EDA)
-Analyzed distributions and relationships between delivery time and factors such as weather, traffic, and number of deliveries
-Analyzed correlations between variables
-Built the Linear Regression baseline model for comparison with the other regression techniques
-Dareen — Data Cleaning & Decision Tree
-Led the main data-cleaning process
-Handled missing values in important columns such as ratings
-Cleaned incorrect date/time values
-Investigated and handled outliers, including unusual delivery-person ages
-Supported the machine learning stage
-Built a Decision Tree Regressor for comparison with the Linear Regression and Random Forest models
-Salma & Maureen — Dashboard
+| Team Member                  | Responsibilities                                                                                                                   |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Menna Allah Khaled Rajab** | Feature Engineering, Main Regression Model, Hyperparameter Tuning, Streamlit Application, Project Coordination & Final Integration |
+| **Abdelrahman**              | Data Preprocessing, Exploratory Data Analysis (EDA), Baseline Linear Regression                                                    |
+| **Dareen**                   | Data Cleaning Lead, Handling Missing/Invalid Values and Outliers, Decision Tree Regression Model                                   |
+| **Salma**                    | Power BI/Tableau Dashboard — Page 1 or Page 2                                                                                      |
+| **Maureen**                  | Power BI/Tableau Dashboard — Page 1 or Page 2                                                                                      |
+
+### Menna — Feature Engineering & Main Model
+
+* Calculated actual delivery distance between restaurant and delivery location using latitude and longitude with the **Haversine formula**
+* Extracted time-based features such as:
+
+  * Hour of the day
+  * Day of the week
+  * Peak/rush-hour indicator
+* Built the main regression model for predicting `Time_taken`
+* Performed model tuning to improve predictive performance
+* Developed and deployed the interactive Streamlit prediction application
+* Coordinated the integration of the project components and final submission files
+
+### Abdelrahman — Preprocessing, EDA & Baseline Model
+
+* Preprocessed numerical and date/time columns
+* Handled missing values
+* Converted date/time information into appropriate formats
+* Investigated and handled unusual data values
+* Performed Exploratory Data Analysis (EDA)
+* Analyzed distributions and relationships between delivery time and factors such as weather, traffic, and number of deliveries
+* Analyzed correlations between variables
+* Built the **Linear Regression baseline model** for comparison with the other regression techniques
+
+### Dareen — Data Cleaning & Decision Tree
+
+* Led the main data-cleaning process
+* Handled missing values in important columns such as ratings
+* Cleaned incorrect date/time values
+* Investigated and handled outliers, including unusual delivery-person ages
+* Supported the machine learning stage
+* Built a **Decision Tree Regressor** for comparison with the Linear Regression and Random Forest models
+
+### Salma & Maureen — Dashboard
 
 The dashboard component focuses on communicating the project's analytical findings through interactive visualizations.
 
-Dashboard Page 1 — Geographic, Weather & Traffic Analysis
+**Dashboard Page 1 — Geographic, Weather & Traffic Analysis**
 
-Geographic analysis of restaurant and delivery locations
-Delivery-time patterns by location
-Impact of weather conditions on delivery time
-Impact of traffic conditions on delivery time
+* Geographic analysis of restaurant and delivery locations
+* Delivery-time patterns by location
+* Impact of weather conditions on delivery time
+* Impact of traffic conditions on delivery time
 
-Dashboard Page 2 — Time Trends & City/Festival Analysis
+**Dashboard Page 2 — Time Trends & City/Festival Analysis**
 
-Delivery-time trends by hour
-Identification of periods with higher delivery delays
-Comparison between days of the week
-City-type comparisons
-Festival vs. non-festival delivery analysis
+* Delivery-time trends by hour
+* Identification of periods with higher delivery delays
+* Comparison between days of the week
+* City-type comparisons
+* Festival vs. non-festival delivery analysis
 
 The final dashboard file will be added to:
 
+```text
 dashboard/
+```
 ---
 
 ## 🔗 Project Links
