@@ -604,7 +604,7 @@ report/
 The final project presentation is included under:
 
 ```text
-presentation/
+presentation/Zomato_Delivery_Time_Prediction_Presentation.pptx
 ```
 
 The presentation summarizes the project's:
@@ -667,7 +667,7 @@ Therefore, model predictions should be considered estimates rather than guarante
 | Power BI Dashboard         | `dashboard/zomato final.pbix`                                                                                          |
 | Project Notebook           | `notebooks/zomato_food_delivery.ipynb`                                                                                 |
 | Project Report             | `report/`                                                                                                              |
-| Project Presentation       | `presentation/`                                                                                                        |
+| Project Presentation       | `presentation/Zomato_Delivery_Time_Prediction_Presentation.pptx`                                                                                                        |
 
 ---
 
