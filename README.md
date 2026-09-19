@@ -408,7 +408,7 @@ Zomato-Food-Delivery-Time-Prediction-project/
 │   └── zomato final.pbix
 │
 ├── report/
-│   └── Final project report
+│   └── Zomato_Final_Project_Report.pdf
 │
 └── presentation/
     └── Zomato_Delivery_Time_Prediction_Presentation.pptx
@@ -596,7 +596,7 @@ The report covers:
 The report is included under:
 
 ```text
-report/
+report/Zomato_Final_Project_Report.pdf
 ```
 
 ### Project Presentation
@@ -654,7 +654,7 @@ Therefore, model predictions should be considered estimates rather than guarante
 | Streamlit Application     | ✅ Live        |
 | Power BI Dashboard        | ✅ Complete    |
 | Project Presentation      | ✅ Complete    |
-| Written Report            | ⏳ In Progress |
+| Written Report            | ✅ Complete    |
 
 ---
 
@@ -666,7 +666,7 @@ Therefore, model predictions should be considered estimates rather than guarante
 | Live Streamlit Application | [Open Streamlit App](https://zomato-food-delivery-time-prediction-project-hu6scvwmeu88brhbc.streamlit.app/)            |
 | Power BI Dashboard         | `dashboard/zomato final.pbix`                                                                                          |
 | Project Notebook           | `notebooks/zomato_food_delivery.ipynb`                                                                                 |
-| Project Report             | `report/`                                                                                                              |
+| Project Report             | `report/Zomato_Final_Project_Report.pdf`                                                                                                              |
 | Project Presentation       | `presentation/Zomato_Delivery_Time_Prediction_Presentation.pptx`                                                                                                        |
 
 ---
